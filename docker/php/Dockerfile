@@ -1,5 +1,6 @@
-#syntax=docker/dockerfile:1.4
-FROM php:8.3-fpm-alpine3.17
+ARG PHP_VERSION
+
+FROM php:${PHP_VERSION}-fpm-alpine3.17
 
 RUN set -eux && \
     apk update && \
