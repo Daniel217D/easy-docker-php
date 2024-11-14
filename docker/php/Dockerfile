@@ -1,6 +1,6 @@
-ARG PHP_VERSION
+ARG PHP_IMAGE
 
-FROM php:${PHP_VERSION}-fpm-alpine3.17
+FROM $PHP_IMAGE
 
 RUN set -eux && \
     apk update && \
