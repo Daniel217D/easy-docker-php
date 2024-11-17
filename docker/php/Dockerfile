@@ -21,3 +21,7 @@ COPY --link fpm.conf /usr/local/etc/php-fpm.d/zzz-docker.conf
 RUN set -eux && \
     cp "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" && \
     mkdir /var/run/php
+
+RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
+    chmod +x wp-cli.phar && \
+    mv wp-cli.phar /usr/local/bin/wp
