@@ -1,10 +1,10 @@
-# Easy Docker PHP
+# Easy Docker PHP (WordPress Branch)
 
-Bundle of PHP + Nginx + PostgreSQL + pgAdmin
+Bundle of PHP + Nginx + MySQL
 
 ## For what
 
-For fast containerization of php applications
+For fast containerization of WordPress sites
 
 ## How to use
  - Add files from the repo to your project or just use this repo
