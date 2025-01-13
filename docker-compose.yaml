@@ -15,7 +15,7 @@ services:
       - php_history:/root/history
 
   nginx:
-    image: nginx:1.24-alpine3.17
+    image: nginx:stable-alpine
     container_name: "${COMPOSE_PROJECT_NAME}-nginx"
     restart: always
     depends_on:
